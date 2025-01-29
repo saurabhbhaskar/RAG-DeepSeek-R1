@@ -5,14 +5,12 @@ from scripts.rag_pipeline import get_answer
 def main():
     st.title("Local RAG System with DeepSeek R1")
 
-    # Step 1: Upload PDF file
     uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
     
     if uploaded_file:
         st.write("Processing the PDF...")
-        docs = process_pdf(uploaded_file)  # Process PDF and get chunks
+        docs = process_pdf(uploaded_file)
 
-        # Step 2: Ask a question
         user_input = st.text_input("Ask your PDF a question:")
         
         if user_input:

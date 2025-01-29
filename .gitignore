@@ -1,0 +1,47 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Ignore virtual environment
+venv/
+env/
+*.venv
+
+# Ignore FAISS database files (if persisted)
+*.faiss
+*.db
+faiss_index/
+
+# Ignore data files (PDFs, uploads, etc.)
+data/
+*.pdf
+*.csv
+*.json
+*.xlsx
+
+# Ignore logs and temp files
+logs/
+*.log
+*.tmp
+temp/
+*.out
+
+# Ignore Jupyter Notebook checkpoints (if used)
+.ipynb_checkpoints/
+
+# Ignore IDE settings (VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+*.iml
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files
+.env
+.env.local
+
+notes.txt
+temp.pdf
